@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Students</title>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"
+    ></script>
+    <script type="text/javascript" src="../script/index.js"></script>
+  </head>
+  <!-- ------------ body  ---------- -->
+
+  <body>
+    <div ng-app="myApp" ng-controller="personCtrl">
+      <div ng-show="showS1">
+        <a ng-click="showH1()">&lt; Back</a>
+        <br />
+        <h1>Students Details</h1>
+        <tr>Id - {{Student_10A_1.id}}</tr>
+        <br />
+        <tr>Student Name - {{Student_10A_1.name}}</tr>
+        <br />
+        <tr>Class - {{Student_10A_1.class}}</tr>
+        <br />
+        <tr>Seat No. - {{Student_10A_1.seat}}</tr>
+        <br />
+        <tr>Rank - {{Student_10A_1.rank}}</tr>
+        <br />
+      </div>
+
+      <div ng-show="showS2">
+        <a ng-click="showH2()">&lt; Back</a>
+        <br />
+        <h1>Students Details</h1>
+        <tr>Id - {{Student_10A_2.id}}</tr>
+        <br />
+        <tr>Student Name - {{Student_10A_2.name}}</tr>
+        <br />
+        <tr>Class - {{Student_10A_2.class}}</tr>
+        <br />
+        <tr>Seat No. - {{Student_10A_2.seat}}</tr>
+        <br />
+        <tr>Rank - {{Student_10A_2.rank}}</tr>
+        <br />
+      </div>
+
+      <div ng-show="showS3">
+        <a ng-click="showH3()">&lt; Back</a>
+        <br />
+        <h1>Students Details</h1>
+        <tr>Id - {{Student_10A_3.id}}</tr>
+        <br />
+        <tr>Student Name - {{Student_10A_3.name}}</tr>
+        <br />
+        <tr>Class - {{Student_10A_3.class}}</tr>
+        <br />
+        <tr>Seat No. - {{Student_10A_3.seat}}</tr>
+        <br />
+        <tr>Rank - {{Student_10A_3.rank}}</tr>
+        <br />
+      </div>
+
+      <div ng-show="showS4">
+        <a ng-click="showH4()">&lt; Back</a>
+        <br />
+        <h1>Students Details</h1>
+        <tr>Id - {{Student_10A_4.id}}</tr>
+        <br />
+        <tr>Student Name - {{Student_10A_4.name}}</tr>
+        <br />
+        <tr>Class - {{Student_10A_4.class}}</tr>
+        <br />
+        <tr>Seat No. - {{Student_10A_4.seat}}</tr>
+        <br />
+        <tr>Rank - {{Student_10A_4.rank}}</tr>
+        <br />
+      </div>
+
+      <div ng-show="showS5">
+        <a ng-click="showH5()">&lt; Back</a>
+        <br />
+        <h1>Students Details</h1>
+        <tr>Id - {{Student_10B_1.id}}</tr>
+        <br />
+        <tr>Student Name - {{Student_10B_1.name}}</tr>
+        <br />
+        <tr>Class - {{Student_10B_1.class}}</tr>
+        <br />
+        <tr>Seat No. - {{Student_10B_1.seat}}</tr>
+        <br />
+        <tr>Rank - {{Student_10B_1.rank}}</tr>
+        <br />
+      </div>
+
+      <div ng-show="showS6">
+        <a ng-click="showH6()">&lt; Back</a>
+        <br />
+        <h1>Students Details</h1>
+        <tr>Id - {{Student_10B_2.id}}</tr>
+        <br />
+        <tr>Student Name - {{Student_10B_2.name}}</tr>
+        <br />
+        <tr>Class - {{Student_10B_2.class}}</tr>
+        <br />
+        <tr>Seat No. - {{Student_10B_2.seat}}</tr>
+        <br />
+        <tr>Rank - {{Student_10B_2.rank}}</tr>
+        <br />
+      </div>
+
+      <div ng-show="showS7">
+        <a ng-click="showH7()">&lt; Back</a>
+        <br />
+        <h1>Students Details</h1>
+        <tr>Id - {{Student_10B_3.id}}</tr>
+        <br />
+        <tr>Student Name - {{Student_10B_3.name}}</tr>
+        <br />
+        <tr>Class - {{Student_10B_3.class}}</tr>
+        <br />
+        <tr>Seat No. - {{Student_10B_3.seat}}</tr>
+        <br />
+        <tr>Rank - {{Student_10B_3.rank}}</tr>
+        <br />
+      </div>
+      <div>
+        <div ng-hide="showS1">
+          <div ng-hide="showS2">
+            <div ng-hide="showS3">
+              <div ng-hide="showS4">
+                <div ng-hide="showS5">
+                  <div ng-hide="showS6">
+                    <div ng-hide="showS7">
+                      <h1>Students</h1>
+                      <div>
+                        <h3>class 10A</h3>
+                        <tr>
+                          {{Student_10A_1.id+' - '+Student_10A_1.name+' - rank
+                          '+Student_10A_1.rank}}
+                          <a ng-click="Student1()">&gt;</a>
+                        </tr>
+                        <br />
+                        <tr>
+                          {{Student_10A_2.id+' - '+Student_10A_2.name+' - rank
+                          '+Student_10A_2.rank}}
+                          <a ng-click="Student2()">&gt;</a>
+                        </tr>
+                        <br />
+                        <tr>
+                          {{Student_10A_3.id+' - '+Student_10A_3.name+' - rank
+                          '+Student_10A_3.rank}}
+                          <a ng-click="Student3()">&gt;</a>
+                        </tr>
+                        <br />
+                        <tr>
+                          {{Student_10A_4.id+' - '+Student_10A_4.name+' - rank
+                          '+Student_10A_4.rank}}
+                          <a ng-click="Student4()">&gt;</a>
+                        </tr>
+                        <br />
+                      </div>
+
+                      <div>
+                        <h3>class 10B</h3>
+                        <tr>
+                          {{Student_10B_1.id+' - '+Student_10B_1.name+' - rank
+                          '+Student_10B_1.rank}}
+                          <a ng-click="Student5()">&gt;</a>
+                        </tr>
+                        <br />
+                        <tr>
+                          {{Student_10B_2.id+' - '+Student_10B_2.name+' - rank
+                          '+Student_10B_2.rank}}
+                          <a ng-click="Student6()">&gt;</a>
+                        </tr>
+                        <br />
+                        <tr>
+                          {{Student_10B_3.id+' - '+Student_10B_3.name+' - rank
+                          '+Student_10B_3.rank}}
+                          <a ng-click="Student7()">&gt;</a>
+                        </tr>
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
